@@ -1,0 +1,5 @@
+<% options = defined?(options) ? options : nil %>
+
+<%= stylesheet_link_tag "//cdn.bootcss.com/font-awesome/#{library_version(:'font-awesome', '4.5.0', options)}/css/font-awesome.min.css", media: 'all' if library_enabled?(:'font-awesome', options) %>
+<%= stylesheet_link_tag "//cdn.bootcss.com/Buttons/#{library_version(:buttons, '2.0.0', options)}/css/buttons.min.css", media: 'all' if library_enabled?(:buttons, options) %>
+<%= stylesheet_link_tag "//cdn.bootcss.com/animate.css/#{library_version(:'animate.css', '3.5.1', options)}/animate.min.css", media: 'all' if library_enabled?(:'animate.css', options) %>
