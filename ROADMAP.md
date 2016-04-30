@@ -6,3 +6,6 @@
 3. Meta partial
 4. Script partial
 5. Style partial
+
+## v1.1
+1. Improve the Meta partial
