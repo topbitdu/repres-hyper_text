@@ -1,3 +1,5 @@
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
@@ -17,5 +19,57 @@
 <meta name="msapplication-TileColor" content="<%= defined?(options) ? options[:microsoft_application_title_color]||'#da532c' : '#da532c' %>">
 <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
 <meta name="theme-color" content="<%= defined?(options) ? options[:theme_color]||'#ffffff' : '#ffffff' %>">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+<%
+=begin
+%>
+
+<!-- https://github.com/audreyr/favicon-cheat-sheet -->
+<!-- http://www.jonathantneal.com/blog/understand-the-favicon/ -->
+<!-- http://realfavicongenerator.net/blog/android-chrome-and-its-favicon/ -->
+
+<%= favicon_link_tag 'icon/icon.ico' %>
+<%= favicon_link_tag 'icon/icon.ico', rel: 'icon' %>
+<%= favicon_link_tag 'icon/icon.ico', rel: 'icon', type: 'image/vnd.microsoft.icon' %>
+<%= favicon_link_tag 'icon/icon.png', rel: 'icon', type: 'image/png' %>
+
+<!-- https://msdn.microsoft.com/en-us/library/gg491740%28v=vs.85%29.aspx -->
+<!--
+  16x16: Address bar, Jump List tasks for Pinned site, Thumbnail Toolbar buttons for Pinned site, Overlay icons for Pinned site)
+  24x24: Pinned site browser UI
+  32x32: New Tab page, Taskbar button
+  64x64: Increased resolution of display devices and larger icons on the desktop
+-->
+<% [ 16, 24, 32, 64 ].each do |size| %>
+  <%= favicon_link_tag "icon/icon-#{size}x#{size}.ico", sizes: "#{size}x#{size}" %>
+<% end %>
+
+<!-- https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html -->
+<!--
+  180x180: iPhone 6s Plus and iPhone 6 Plus (@3x)
+  120x120: iPhone 6s, iPhone 6, and iPhone 5 (@2x)
+  120x120: iPhone 4s (@2x)
+  152x152: iPad and iPad mini (@2x)
+  76x76:   iPad 2 and iPad mini (@1x)
+  167x167: iPad Pro (@2x)
+  Deprecated sizes: [ 57, 60, 72, 76, 114, 120, 144, 152, 180 ]
+-->
+<% [ 76, 120, 152, 167, 180 ].each do |size| %>
+  <%= favicon_link_tag "icon/apple-touch-icon-#{size}x#{size}.png", rel: 'apple-touch-icon', type: 'image/png', sizes: "#{size}x#{size}" %>
+<% end %>
+
+<!-- https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+<%= favicon_link_tag "icon/apple-touch-icon-60x60.png",            rel: 'apple-touch-icon',          type: 'image/png' %>
+<%= favicon_link_tag "icon/apple-touch-startup-image-320x480.png", rel: 'apple-touch-startup-image', type: 'image/png' %>
+
+<% [ 16, 32, 96, 194 ].each do |size| %>
+  <%= favicon_link_tag "favicons/favicon-#{size}x#{size}.png", rel: 'icon', type: 'image/png', sizes: "#{size}x#{size}" %>
+<% end %>
+
+<% [ 192 ].each do |size| %>
+  <%= favicon_link_tag "favicons/android-chrome-#{size}x#{size}.png", rel: 'icon', type: 'image/png', sizes: "#{size}x#{size}" %>
+<% end %>
+
+<%
+=end
+%>
