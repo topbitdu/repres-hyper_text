@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap</title>
+  <title>Repres HyperText</title>
   <%= stylesheet_link_tag    "bootstrap/application", media: "all" %>
-  <%= javascript_include_tag "bootstrap/application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
+
+<%= javascript_include_tag "bootstrap/application" %>
 
 </body>
 </html>
