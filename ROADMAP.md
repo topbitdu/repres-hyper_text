@@ -12,5 +12,8 @@
 2. Improve the Style partial to load Font Awesome v4.6.3 by default
 3. Improve the Style partial to load Font Awesome v3.5.2 by default
 
+## v1.0.2
+1. Improve the Script partial to load jQuery v2.2.4 by default
+
 ## v1.1
 1. Improve the Meta partial
