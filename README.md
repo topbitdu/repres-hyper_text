@@ -33,9 +33,20 @@ helper Repres::HyperText::ApplicationHelper
 <html>
 
   <head>
-    <%= render partial: 'repres/hyper_text/meta'  %>
-    <%= render partial: 'repres/hyper_text/icon'  %>
+
+    <%= render partial: 'repres/hyper_text/meta' %>
+    <!-- or the following line works identically -->
+    <%= hyper_text_meta %>
+
+    <%= render partial: 'repres/hyper_text/icon' %>
+    <!-- or the following line works identically -->
+    <%= hyper_text_icon %>
+
+
     <%= render partial: 'repres/hyper_text/style', locals: { options: { 'font-awesome' => true } } %>
+    <!-- or the following line works identically -->
+    <%= hyper_text_style 'font-awesome' => true %>
+
   </head>
 
   <body>
@@ -43,7 +54,11 @@ helper Repres::HyperText::ApplicationHelper
     <div id='alpha-dialog'></div>
     <div id='beta-dialog'></div>
     <div id='gammar-dialog'></div>
+
     <%= render partial: 'repres/hyper_text/script', locals: { options: { jquery: true } } %>
+    <!-- or the following line works identically -->
+    <%= hyper_text_script jquery: true %>
+
   </body>
 
 </html>
@@ -55,6 +70,8 @@ helper Repres::HyperText::ApplicationHelper
 The Meta partial includes the HTML meta tags for HTML 5.
 ```erb
 <%= render partial: 'repres/hyper_text/meta' %>
+<!-- or the following line works identically -->
+<%= hyper_text_meta %>
 ```
 
 The source codes of the Meta partial:
@@ -81,6 +98,8 @@ The Icon partial includes the HTML link tags for Favorite Icons.
              }
            }
 %>
+<!-- or the following line works identically -->
+<%= hyper_text_icon safari_mask_icon_color: '#5bbad5', microsoft_application_title_color: '#da532c', theme_color: '#ffffff' %>
 ```
 
 
@@ -91,16 +110,22 @@ The Script partial includes the HTML script tags. Only the [Boot CDN](http://cdn
 The following code snippet does not load any JavaScript library.
 ```erb
 <%= render partial: 'repres/hyper_text/script' %>
+<!-- or the following line works identically -->
+<%= hyper_text_script %>
 ```
 
 The following code snippet loads the latest jQuery.
 ```erb
 <%= render partial: 'repres/hyper_text/script', locals: { options: { jquery: true } } %>
+<!-- or the following line works identically -->
+<%= hyper_text_script jquery: true %>
 ```
 
 The following code snippet loads the jQuery with the given version.
 ```erb
 <%= render partial: 'repres/hyper_text/script', locals: { options: { jquery: { version: '2.2.0' } } } %>
+<!-- or the following line works identically -->
+<%= hyper_text_script jquery: { version: '2.2.0' } %>
 ```
 
 The following JavaScript libraries are switchable, and the version can be configurable:
@@ -115,16 +140,22 @@ The Style partial includes the HTML style tags. Only the [Boot CDN](http://cdn.b
 The following code snippet does not load any CSS library.
 ```erb
 <%= render partial: 'repres/hyper_text/style' %>
+<!-- or the following line works identically -->
+<%= hyper_text_style %>
 ```
 
 The following code snippet loads the latest Font Awesome.
 ```erb
 <%= render partial: 'repres/hyper_text/script', locals: { options: { :'font-awesome' => true } } %>
+<!-- or the following line works identically -->
+<%= hyper_text_style :'font-awesome' => true %>
 ```
 
 The following code snippet loads the Font Awesome with the given version.
 ```erb
 <%= render partial: 'repres/hyper_text/style', locals: { options: { :'font-awesome' => { version: '4.4.0' } } } %>
+<!-- or the following line works identically -->
+<%= hyper_text_style :'font-awesome' => { version: '4.4.0' } %>
 ```
 
 The following CSS libraries are switchable, and the version can be configurable:
