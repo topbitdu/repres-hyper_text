@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
 [![Gem Version](https://badge.fury.io/rb/repres-hyper_text.svg)](https://badge.fury.io/rb/repres-hyper_text)
+[![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/repres-hyper_text.svg)](https://gemnasium.com/github.com/topbitdu/repres-hyper_text)
 
 Repres (REsource PRESentation) is a series of resource presentation engines. The Hyper Text resource presentation engine includes HyperText-based resource presentation templates & snippets.
 Repres (资源表现)是一系列的资源表现引擎。超文本资源表现引擎包括基于超文本的资源表现模版和片段。
