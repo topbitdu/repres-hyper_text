@@ -10,12 +10,14 @@ Repres (资源表现)是一系列的资源表现引擎。超文本资源表现�
 
 
 ## Recent Update
+
 Check out the [Road Map](ROADMAP.md) to find out what's the next.
 Check out the [Change Log](CHANGELOG.md) to find out what's new.
 
 
 
 ## Usage in Gemfile
+
 ```ruby
 gem 'repres-hyper_text'
 ```
@@ -23,6 +25,7 @@ gem 'repres-hyper_text'
 
 
 ## Include the Helper in your Application Controller before Render the Style or Script
+
 ```ruby
 helper Repres::HyperText::ApplicationHelper
 ```
@@ -30,6 +33,7 @@ helper Repres::HyperText::ApplicationHelper
 
 
 ## Render the Pre-defined Partials
+
 ```erb
 <html>
 
@@ -68,6 +72,7 @@ helper Repres::HyperText::ApplicationHelper
 
 
 ### Render the Meta
+
 The Meta partial includes the HTML meta tags for HTML 5.
 ```erb
 <%= render partial: 'repres/hyper_text/meta' %>
@@ -88,6 +93,7 @@ The source codes of the Meta partial:
 
 
 ### Render the Favorite Icon
+
 The Icon partial includes the HTML link tags for Favorite Icons.
 ```erb
 <%= render partial: 'repres/hyper_text/icon',
@@ -106,6 +112,7 @@ The Icon partial includes the HTML link tags for Favorite Icons.
 
 
 ### Render the Script
+
 The Script partial includes the HTML script tags. Only the [Boot CDN](http://cdn.bootcss.com/) servers are supported.
 
 The following code snippet does not load any JavaScript library.
@@ -136,6 +143,7 @@ The following JavaScript libraries are switchable, and the version can be config
 
 
 ### Render the Style
+
 The Style partial includes the HTML style tags. Only the [Boot CDN](http://cdn.bootcss.com/) servers are supported.
 
 The following code snippet does not load any CSS library.
