@@ -69,8 +69,6 @@ helper Repres::HyperText::ApplicationHelper
 </html>
 ```
 
-
-
 ### Render the Meta
 
 The Meta partial includes the HTML meta tags for HTML 5.
@@ -90,8 +88,6 @@ The source codes of the Meta partial:
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 ```
 
-
-
 ### Render the Favorite Icon
 
 The Icon partial includes the HTML link tags for Favorite Icons.
@@ -108,8 +104,6 @@ The Icon partial includes the HTML link tags for Favorite Icons.
 <!-- or the following line works identically -->
 <%= hyper_text_icon safari_mask_icon_color: '#5bbad5', microsoft_application_title_color: '#da532c', theme_color: '#ffffff' %>
 ```
-
-
 
 ### Render the Script
 
@@ -139,8 +133,6 @@ The following code snippet loads the jQuery with the given version.
 The following JavaScript libraries are switchable, and the version can be configurable:
 - :modernizr
 - :jquery
-
-
 
 ### Render the Style
 
