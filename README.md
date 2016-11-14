@@ -107,7 +107,7 @@ The Icon partial includes the HTML link tags for Favorite Icons.
 
 ### Render the Script
 
-The Script partial includes the HTML script tags. Only the [Boot CDN](http://cdn.bootcss.com/) servers are supported.
+The Script partial includes the HTML script tags. The [Boot CDN](http://cdn.bootcss.com/) server is supported by default. However, the :cdn option could be passed in to support other CDN servers. The CDN servers must syncrhonize with [cdnjs](https://github.com/cdnjs/cdnjs).
 
 The following code snippet does not load any JavaScript library.
 ```erb
@@ -125,9 +125,9 @@ The following code snippet loads the latest jQuery.
 
 The following code snippet loads the jQuery with the given version.
 ```erb
-<%= render partial: 'repres/hyper_text/script', locals: { options: { jquery: { version: '2.2.0' } } } %>
+<%= render partial: 'repres/hyper_text/script', locals: { options: { jquery: { version: '2.2.0', cdn: 'cdn.server.com' } } } %>
 <!-- or the following line works identically -->
-<%= hyper_text_script jquery: { version: '2.2.0' } %>
+<%= hyper_text_script jquery: { version: '2.2.0', cdn: 'cdn.server.com' } %>
 ```
 
 The following JavaScript libraries are switchable, and the version can be configurable:
@@ -136,7 +136,7 @@ The following JavaScript libraries are switchable, and the version can be config
 
 ### Render the Style
 
-The Style partial includes the HTML style tags. Only the [Boot CDN](http://cdn.bootcss.com/) servers are supported.
+The Style partial includes the HTML style tags. The [Boot CDN](http://cdn.bootcss.com/) server is supported by default. However, the :cdn option could be passed in to support other CDN servers. The CDN servers must syncrhonize with [cdnjs](https://github.com/cdnjs/cdnjs).
 
 The following code snippet does not load any CSS library.
 ```erb
@@ -154,9 +154,9 @@ The following code snippet loads the latest Font Awesome.
 
 The following code snippet loads the Font Awesome with the given version.
 ```erb
-<%= render partial: 'repres/hyper_text/style', locals: { options: { :'font-awesome' => { version: '4.4.0' } } } %>
+<%= render partial: 'repres/hyper_text/style', locals: { options: { :'font-awesome' => { version: '4.4.0', cdn: 'cdn.server.com' } } } %>
 <!-- or the following line works identically -->
-<%= hyper_text_style :'font-awesome' => { version: '4.4.0' } %>
+<%= hyper_text_style :'font-awesome' => { version: '4.4.0', cdn: 'cdn.server.com' } %>
 ```
 
 The following CSS libraries are switchable, and the version can be configurable:
