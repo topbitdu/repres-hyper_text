@@ -24,4 +24,8 @@ module Repres::HyperText::ApplicationHelper
     render partial: 'repres/hyper_text/style', locals: { options: options }
   end
 
+  def domain_name(name, options)
+    defined?(options) ? options.try(:[], name).try(:[], :cdn)||Repres::HyperText::CDN : Repres::HyperText::CDN
+  end
+
 end
