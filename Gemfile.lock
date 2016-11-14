@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    repres-hyper_text (1.1)
+    repres-hyper_text (1.2)
       rails (>= 4.2)
 
 GEM
@@ -44,7 +44,7 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    arel (7.1.2)
+    arel (7.1.4)
     builder (3.2.2)
     concurrent-ruby (1.0.2)
     erubis (2.7.0)
@@ -62,10 +62,8 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.1)
     nio4r (1.2.1)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
-    pkg-config (1.1.7)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
