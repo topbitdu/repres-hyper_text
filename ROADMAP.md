@@ -25,3 +25,8 @@
 1. Improve the Application helper to add the #domain_name method
 2. Improve the Script partial to support the :cdn option
 3. Improve the Style partial to support the :cdn option
+
+## v1.2.1
+1. Improve the Application job for namespace
+2. Improve the Application mailer for namespace
+3. Improve the Application record for namespace
