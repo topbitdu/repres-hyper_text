@@ -1,3 +1,3 @@
-class Repre::HyperText::ApplicationRecord < ActiveRecord::Base
+class Repres::HyperText::ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
 end
