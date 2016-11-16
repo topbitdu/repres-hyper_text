@@ -1,2 +1,2 @@
-class Repre::HyperText::ApplicationJob < ActiveJob::Base
+class Repres::HyperText::ApplicationJob < ActiveJob::Base
 end
