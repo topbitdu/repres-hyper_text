@@ -22,7 +22,7 @@
 1. Application helper
 
 ## v1.2
-1. Improve the Application helper to add the #domain_name method
+1. Improved the Application helper to add the #domain_name method
 2. Improve the Script partial to support the :cdn option
 3. Improve the Style partial to support the :cdn option
 
