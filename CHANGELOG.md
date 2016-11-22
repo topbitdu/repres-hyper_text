@@ -27,6 +27,6 @@
 3. Improved the Style partial to support the :cdn option
 
 ## v1.2.1
-1. Improve the Application job for namespace
+1. Improved the Application job for namespace
 2. Improve the Application mailer for namespace
 3. Improve the Application record for namespace
