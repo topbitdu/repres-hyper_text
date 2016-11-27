@@ -8,7 +8,7 @@
 5. Style partial
 
 ## v1.0.1
-1. Improve the Script partial to load jQuery v2.2.3 by default
+1. Improve the Script partial to load [jQuery](http://jquery.com/) v2.2.3 by default
 2. Improve the Style partial to load Font Awesome v4.6.3 by default
 3. Improve the Style partial to load Animate.css v3.5.2 by default
 
