@@ -13,7 +13,7 @@
 3. Improved the Style partial to load Animate.css v3.5.2 by default
 
 ## v1.0.2
-1. Improved the Script partial to load jQuery v2.2.4 by default
+1. Improved the Script partial to load [jQuery](http://jquery.com/) v2.2.4 by default
 
 ## v1.0.3
 1. Improved the Ruby Gem Specification to support [rails](https://github.com/rails/rails) v5.0
