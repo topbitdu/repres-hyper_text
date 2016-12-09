@@ -30,3 +30,6 @@
 1. Improve the Application job for namespace
 2. Improve the Application mailer for namespace
 3. Improve the Application record for namespace
+
+## v1.3
+1. Improve the Improve the Script partial to load Buttons v2.0.0 by default
