@@ -133,6 +133,7 @@ The following code snippet loads the jQuery with the given version.
 The following JavaScript libraries are switchable, and the version can be configurable:
 - :modernizr
 - :jquery
+- :buttons
 
 ### Render the Style
 
