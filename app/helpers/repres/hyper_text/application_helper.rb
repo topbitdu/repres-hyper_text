@@ -1,3 +1,6 @@
+##
+# Application Helper 是为 HTML 页面生成标签的视图辅助模块。
+
 module Repres::HyperText::ApplicationHelper
 
   def library_enabled?(name, options)
