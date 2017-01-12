@@ -1,6 +1,8 @@
 # Repres HyperText 超文本资源表现引擎
 
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/repres-hyper_text/frames)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+
 [![Gem Version](https://badge.fury.io/rb/repres-hyper_text.svg)](https://badge.fury.io/rb/repres-hyper_text)
 [![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/repres-hyper_text.svg)](https://gemnasium.com/github.com/topbitdu/repres-hyper_text)
 
