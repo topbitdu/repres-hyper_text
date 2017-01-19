@@ -32,4 +32,4 @@
 3. Improved the Application record for namespace
 
 ## v1.3
-1. Improve the Improve the Script partial to load Buttons v2.0.0 by default
+1. Improved the Improve the Script partial to load Buttons v2.0.0 by default
