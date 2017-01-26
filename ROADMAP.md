@@ -33,3 +33,8 @@
 
 ## v1.3
 1. Improve the Improve the Script partial to load Buttons v2.0.0 by default
+
+## v1.4
+1. Models RSpec examples manifest
+2. Types RSpec examples manifest
+3. Validators RSpec examples manifest
