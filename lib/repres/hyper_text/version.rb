@@ -1,5 +1,5 @@
 module Repres
   module HyperText
-    VERSION = '1.3'.freeze
+    VERSION = '1.4'.freeze
   end
 end
