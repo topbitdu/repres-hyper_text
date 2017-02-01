@@ -166,3 +166,18 @@ The following CSS libraries are switchable, and the version can be configurable:
 - :'font-awesome'
 - :buttons
 - :'animate.css'
+
+
+
+## RSpec examples
+
+```ruby
+# spec/models/repres_spec.rb
+require 'repres/hyper_text/models_rspec'
+
+# spec/types/repres_spec.rb
+require 'repres/hyper_text/types_rspec'
+
+# spec/validators/repres_spec.rb
+require 'repres/hyper_text/validators_rspec'
+```
