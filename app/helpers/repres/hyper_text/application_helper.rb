@@ -3,6 +3,8 @@
 
 module Repres::HyperText::ApplicationHelper
 
+  ##
+  # 以 name 对应的值为键从 options 这个 Hash 中获取对应的值。
   def library_enabled?(name, options)
     defined?(options) && options.try(:[], name).present?
   end
