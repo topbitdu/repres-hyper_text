@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    repres-hyper_text (1.4)
+    repres-hyper_text (1.4.1)
       rails (>= 4.2)
 
 GEM
