@@ -40,4 +40,4 @@
 3. Validators RSpec examples manifest
 
 ## v1.4.1
-1. Improve the Style partial to load Font Awesome v4.7.0 by default
+1. Improved the Style partial to load Font Awesome v4.7.0 by default
