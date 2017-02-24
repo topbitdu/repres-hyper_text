@@ -9,6 +9,10 @@ module Repres::HyperText::ApplicationHelper
     defined?(options) && options.try(:[], name).present?
   end
 
+  ##
+  # 以 name 对应的值为键从 options 这个 Hash 中获取对应的版本号。
+  # 如果 options 为空，或者 options 中没有指定️版本号，则返回 default_version 对应的版本号。如：
+  # library_version 'bootstrap', '3.0', {}
   def library_version(name, default_version, options)
     defined?(options) ? options.try(:[], name).try(:[], :version)||default_version : default_version
   end
