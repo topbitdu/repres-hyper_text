@@ -17,6 +17,11 @@ module Repres::HyperText::ApplicationHelper
     defined?(options) ? options.try(:[], name).try(:[], :version)||default_version : default_version
   end
 
+  ##
+  # 呈现 icon 相关的 HTML 代码。用于 <head></head> 之中。如：
+  # <head>
+  #   <%= hyper_text_icon %>
+  # </head>
   def hyper_text_icon(options = {})
     render partial: 'repres/hyper_text/icon', locals: { options: options }
   end
