@@ -26,6 +26,11 @@ module Repres::HyperText::ApplicationHelper
     render partial: 'repres/hyper_text/icon', locals: { options: options }
   end
 
+  ##
+  # 呈现 meta 相关的 HTML 代码。用于 <head></head> 之中。如：
+  # <head>
+  #   <%= hyper_text_meta %>
+  # </head>
   def hyper_text_meta(options = {})
     render partial: 'repres/hyper_text/meta', locals: { options: options }
   end
