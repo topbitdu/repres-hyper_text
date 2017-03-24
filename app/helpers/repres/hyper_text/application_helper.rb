@@ -35,6 +35,14 @@ module Repres::HyperText::ApplicationHelper
     render partial: 'repres/hyper_text/meta', locals: { options: options }
   end
 
+  ##
+  # 呈现 script 相关的 HTML 代码。用于 <body></body> 结束之前。如：
+  # <body>
+  #   <header></header>
+  #   <main></main>
+  #   <footer></footer>
+  #   <%= hyper_text_script %>
+  # </body>
   def hyper_text_script(options = {})
     render partial: 'repres/hyper_text/script', locals: { options: options }
   end
