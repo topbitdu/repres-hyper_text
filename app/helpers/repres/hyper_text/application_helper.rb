@@ -47,6 +47,12 @@ module Repres::HyperText::ApplicationHelper
     render partial: 'repres/hyper_text/script', locals: { options: options }
   end
 
+  ##
+  # 呈现 style 相关的 HTML 代码。用于 <head></head> 结束之前。如：
+  # <head>
+  #   <title>Page Title</title>
+  #   <%= hyper_text_style %>
+  # </head>
   def hyper_text_style(options = {})
     render partial: 'repres/hyper_text/style', locals: { options: options }
   end
