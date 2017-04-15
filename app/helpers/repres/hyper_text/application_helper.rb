@@ -57,6 +57,8 @@ module Repres::HyperText::ApplicationHelper
     render partial: 'repres/hyper_text/style', locals: { options: options }
   end
 
+  ##
+  # 获取 JS 库或 CSS 库的 CDN 域名。如果没有指定 CDN 域名，则采用系统缺省的 CDN 域名。
   def domain_name(name, options)
     defined?(options) ? options.try(:[], name).try(:[], :cdn)||Repres::HyperText::CDN : Repres::HyperText::CDN
   end
