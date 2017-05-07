@@ -49,7 +49,6 @@ helper Repres::HyperText::ApplicationHelper
     <!-- or the following line works identically -->
     <%= hyper_text_icon %>
 
-
     <%= render partial: 'repres/hyper_text/style', locals: { options: { 'font-awesome' => true } } %>
     <!-- or the following line works identically -->
     <%= hyper_text_style 'font-awesome' => true %>
